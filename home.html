@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Resume Website</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href = "style.css" rel = stylesheet>
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Resume</h2>
+            <h3>Background</h3>
+            <ul>
+                <li><a href="#Home" onclick="return pauseALL()">Home</a></li>
+                <li><a href="#Education" onclick="return pauseALL()">Education</a></li>
+            </ul> 
+            <h3>Work Experience</h3>
+            <ul>
+                <li><a href="#WorkExperience1" onclick="return pauseALL();">Google 2024 - 2027</a></li>
+                <li><a href="#WorkExperience2" onclick="return pauseALL();">Google 2030 - 2034</a></li>
+                <li><a href="#WorkExperience3" onclick="return pauseALL();">Tesla 2035 - Now</a></li>
+
+            </ul> 
+            <h3>Extras</h3>
+            <ul>
+                <li><a href="#Extra1" onclick="return playFPX();">Coach of 2019, 2023 world Champion FPX</a></li>
+                <li><a href="#Extra2" onclick="return playWang();">Youtube cooking channel with over 1 million subscribers</a></li>
+                <li><a href="#contact" onclick="return pauseALL()">About Me</a></li>
+            </ul> 
+
+        </div>
+        <div class = "main">
+            <div class="block" id="Home">
+                <div class="display-3"> Eddie Huang</div><br>
+                <img class="image1"  src="/Media/Jackson.png">
+
+            </div>
+            <div class="block" id="Education">
+                <div class="h4">University of California San Diego</div>
+                <class class="list-group">
+                    <li class="list-group-item">Electrical Engineering BS 2018-2022</li>
+                    <li class="list-group-item">3.8 GPA</li>
+                    <li class="list-group-item">test1</li>
+
+                </class><br>
+                <div class="h4">Stanford University</div>
+                <class class="list-group">
+                    <li class="list-group-item">Machine Learning Masters 2027-2030</li>
+                    <li class="list-group-item">3.9 GPA</li>
+                </class>
+            </div>
+            
+            <div class="block" id="WorkExperience1">
+                <div class="h3">Google</div>
+                <p>2024-2027: Pixel 7 Custom Silicon Senior Engineer, Silicon Valley</p>
+                <p>Senior Engineer and Lead designer of the SoC used in the Pixel 7. 
+                    Chip was designed with machine learning to specialize in always on capability. 
+                    Hardware and software were tightly integrated for 130% power efficiency (from previous generation)</p>
+
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md">
+                            <img class ="image2" src="/media/pixel1.jpg" alt="pixel1" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/pixel2.jpg" alt="pixel2" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/pixel3.jpg" alt="pixel3" style="width:100%">
+                        </div>
+                        </div>
+                      </div>
+            </div>
+            
+            <div class="block" id="WorkExperience2">
+                <div class="h3">Google</div>
+                <p>2030-2034: Senior Design Engineer for Google SoC, Silicon Valley</p>
+                <p>Chief design lead for Google's custom SoC, Kyte2, codename: WhiteChapel2.
+                    Directed a heavy emphasis on using Machine learning to improve performance per transistor, and power efficiency.
+                    140% Instructions per cycle vs Kyte1, and 185% Instructions per cycle vs Snapdragon 950. Power efficiency 
+                    125% and 225% respectively.
+                </p>
+
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md">
+                            <img class ="image2" src="/media/wc1.jpg" alt="pixel1" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/wc2.jpg" alt="pixel2" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/wc3.png" alt="pixel3" style="width:100%">
+                        </div>
+                        </div>
+                      </div>            
+                    </div>
+            
+            <div class="block" id="WorkExperience3">
+                <div class="h3">Tesla</div>
+                <p>2035-now: AI Image Recognition Engineer, Silicon Valley</p>
+                <p>In charge of improving Tesla's image recognition ability for the Model 5s.
+                    Worked heavily with machine learning to improve lane detection and parking capabilities.
+                    Because of my team, the Model 5s became the first vehicle to get legal recognition as "self driving"
+                    in Germany, United States, China, Canada, and the UK.
+                </p>
+
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md">
+                            <img class ="image2" src="/media/tesla1.jpg" alt="pixel1" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/tesla2.jpg" alt="pixel2" style="width:100%">
+                        </div>
+                          <div class="col-md">
+                            <img class="image2" src="/Media/tesla3.png" alt="pixel3" style="width:100%">
+                        </div>
+                        </div>
+                      </div>    
+            </div>
+            
+            <div class="block" id="Extra1">
+                <h3> Head coach of 2019 World Champion FPX</h3> <br>
+                <video id="fpx" controls muted >
+                    <source src="/Media/fpx.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> <br>
+                  <p>(2022-2023) Shang Hai, China</p>
+                  <p>Head strategical coach of FPX's during their second championship title. Worked with the players in mandarin. Coached team building and macro strategies</p>
+                  <p>Kim "DoinB" Tae-Sang testimony: "He was a critical element of our win, would have lost to TSM without him"</p>
+            </div>
+            
+            <div class="block" id="Extra2">
+                <h3> Producer, Editor and Chef</h3> <br>
+                <video id="wanggang" controls muted>
+                    <source src="/Media/wanggang.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> <br>
+                  <p>(2021-now) Youtube.com/EddieHuang</p>
+                  <p>Teachers Chinese cooking with scientific principles to an english speaking audience</p>
+                  <p> 1+ million subscribers, 23 unique sponsors, 500+ million total channel views</p>
+            </div>
+            <div class="block" id="contact">
+                <div class="h3">Hi.</div>
+                <p>I'm an Electrical Engineer specializing in Machine Learning. I live with my wife
+                    my cat Acorn, and my kitten Walnut in Palo Alto.
+                </p>
+                <p>I'm always open to new oportunities, or to get to know more people!</p>
+                <p> <span class="material-icons"> email </span> eddiehuang00@gmail.com </p>
+                <p> <span class="material-icons"> location_on  </span> Palo Alto, California </p>
+                <p> <span class="material-icons"> phone </span> 302-401-9201 </p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="First Last">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" class="form-control" id="subject" placeholder="eg. interview"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">message</label>
+                        <textarea type="text" class="form-control" id="message" placeholder="message..." rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+            
+
+
+
+    </wrapper>
+    </body>
+</html>
